@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class java2 {
+	private static String a;
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int a = 0;
+		System.out.println("请输入第一个值");
+		if (input.hasNextInt() == true) {
+			a = input.nextInt();
+		}
+		int b = 0;
+		System.out.println("请输入第二个值");
+		if (input.hasNextInt() == true) {
+			b = input.nextInt();
+		} else {
+			System.out.println("请输入正确的数字");
+		}
+
+		if (input.hasNextInt() == true) {
+			int c = input.nextInt();
+			switch (c) {// 输入4种选择,4种运算方式。
+			case 1:
+				System.out.println("计算结果:" + a + "+" + b + "=" + (a + b));
+				break;
+			case 2:
+				System.out.println("计算结果:" + a + "-" + b + "=" + (a - b));
+				break;
+			case 3:
+				System.out.println("计算结果:" + a + "*" + b + "=" + (a * b));
+				break;
+			case 4:
+				System.out.println("计算结果:" + a + "/" + b + "=" + (a / b));
+				break;
+
+			default:
+				break;
+			}
+		}
+	}
+}

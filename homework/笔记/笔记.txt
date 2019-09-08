@@ -1,0 +1,31 @@
+            变量的概念
+            数据类型 char:字符型 ‘男，女’
+                     string 字符串 较多的文字
+                     int 整数
+                     double 小数
+                     boolean 比较运算符号的结果类型 真true 假 false
+第二章 变量 使用变量的步骤 第一步 声明变量，在内存中申请一块空间。第二步：赋值 第三步： 使用变量。
+                      第一步 创建scanner对象 Scanner input=new Scanner（System.in）
+            控制台输入	 整数 int age= int.nextint（）
+                      第二步接受控制台输入的数据 字符串 String name=input.next（）
+
+
+                  赋值运算符“=”  将右边的值赋给左边
+            运算符
+                  算术运算符： %：求余                                                                                                                                                       /：求商                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+                                             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

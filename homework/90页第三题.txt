@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class java2 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("请输入分数");
+		int a = input.nextInt();
+		switch (a / 10) {
+		case 10:
+			System.out.println("车");
+			break;
+		case 9:
+			System.out.println("电脑");
+			break;
+		case 6:
+		case 7:
+		case 8:
+			System.out.println("手机");
+			break;
+
+		default:
+			System.out.println("没有礼物");
+			break;
+		}
+	}
+}

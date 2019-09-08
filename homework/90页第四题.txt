@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class llllll {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("请输入头等舱1经济舱2");
+		int b = input.nextInt();
+		System.out.println("请输入月份");
+		int a = input.nextInt();// a表示月份
+		double c = 0;
+		int num = a % 10;
+		if (b == 1) {
+			switch (num) {
+			case 1:
+			case 2:
+			case 3:
+				System.out.println("淡季");
+				double discou = 0.5;
+				c = 5000 * discou;
+				break;
+			case 4:
+			case 5:
+			case 6:
+			case 7:
+			case 8:
+			case 9:
+			case 0:
+				System.out.println("旺季");
+				double discount = 0.9;
+				c = 5000 * discount;
+			default:
+				break;
+			}
+		} else {
+			switch (num) {
+			case 1:
+			case 2:
+			case 3:
+				System.out.println("淡季");
+				double discou = 0.4;
+				c = 5000 * discou;
+				break;
+			case 4:
+			case 5:
+			case 6:
+			case 7:
+			case 8:
+			case 9:
+			case 0:
+				System.out.println("旺季");
+				double discount = 0.8;
+				c = 5000 * discount;
+			default:
+				break;
+			}
+		}
+		System.out.println("机票价格为" + c);
+	}
+
+}

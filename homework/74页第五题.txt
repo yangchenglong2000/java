@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class aaaa {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("请输入分数");
+		int a = input.nextInt();
+		if (a < 60) {
+			System.out.println("什么都没有");
+		} else if (a <=90) {
+			System.out.println("手机");
+		} else if (a < 100) {
+			System.out.println("笔记本");
+		} else {
+			System.out.println("一辆车");
+
+		}
+	}
+}

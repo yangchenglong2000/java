@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+
+
+public class AAA {
+public static void main(String[]args){
+	System.out.println("睿智东西小豪豪" );
+    int leftHand=10;
+    int rightHand=8;
+    int a;
+    System.out.println("左手"+leftHand);
+    System.out.println("右手"+rightHand);
+    a=leftHand;
+    leftHand=rightHand;
+    rightHand=a;
+	System.out.println("左手"+leftHand);
+	System.out.println("右手"+rightHand);
+	Scanner input=new Scanner(System.in);
+}
+
+
+}

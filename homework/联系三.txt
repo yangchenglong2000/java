@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+
+public class javatest7 { 
+	public static void main(String[]args){
+   
+  int a=0;
+  int b=7;
+  while (b<50) {
+	a=a+b;
+	b=b+7;
+	
+	System.out.println(a);
+}
+	}
+}

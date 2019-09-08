@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+import sun.awt.im.InputContext;
+
+	
+public class AVC {
+	public static void main(String[]args){
+		Scanner input=new Scanner(System.in);
+		System.out.println("请输入张三的成绩");
+		int zhangScore=input.nextInt();
+		boolean a=zhangScore>80;
+		System.out.println("张三的成绩大于80么？"+a);
+	}
+}
+	

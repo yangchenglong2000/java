@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+
+
+
+public class gtvtgh {
+public static void main(String[]args){
+	int random=(int)(Math.random()*10);
+	Scanner input=new Scanner(System.in);
+	System.out.println("请输入会员号");
+	int hao=input.nextInt();
+	int x=hao/100%10;
+	if (x==random){
+		System.out.println("hao号客户是幸运用户，获得精美礼品一份");
+	}else {System.out.println(hao+"号客户，谢谢您的支持");
+	
+	}
+}
+}

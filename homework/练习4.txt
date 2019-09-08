@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class javatest7 {
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		int max;
+		int min;
+
+		int a = input.nextInt();// 做最大最小的初始值
+		System.out.println("请输入接受多少个数");
+		int d = input.nextInt();// 一共多少个数
+		int c = 1;
+
+		min = a;
+		max = a;
+		while (c <= d) {
+			System.out.println("请输入数值");
+			a = input.nextInt();
+			c++;
+		}
+		while (a > max) {
+			int b = 0;
+			b = a;
+			a = max;
+			max = b;
+		}
+		System.out.println("最大值为" + max);
+		while (min > a) {
+			int e = 0;
+			e = min;
+			a = min;
+			a = e;
+		}
+		System.out.println("最小值为" + min);
+
+	}
+}

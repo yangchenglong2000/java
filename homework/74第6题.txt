@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+
+public class ada {
+	public static void main(String[]args){
+		Scanner input=new Scanner(System.in);
+		System.out.println("请选择出行月份：1~12");
+		int a=input.nextInt();
+		System.out.println("请问您选择头等舱还是经济舱？头等舱输入1，经济舱输入2.");
+		int b=input.nextInt();
+		double c = 5000;// c 表示机票价格
+		if (a>=4&&a<=10) {
+			
+				System.out.println("旺季");
+				if (b==1) {
+					double discount=0.9;c=5000*discount;
+				}else {
+					double discount=0.8; c=5000*discount;
+				}
+			
+		}else if (a<4||a>10) {
+		
+				System.out.println("淡季");
+				if (b==1) {
+					double discount=0.5; c=5000*discount;
+				}else {
+					double discount=0.4; c=5000*discount;
+				}
+			
+		}
+		System.out.println("您的机票价格为"+c);
+}
+}
